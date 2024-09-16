@@ -136,6 +136,9 @@ body {
 }
 .main {
   flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .main > input {
   display: none;
@@ -147,7 +150,7 @@ body {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
 }
 .css-meme-slide {
   text-align: center;
@@ -157,17 +160,20 @@ body {
 }
 .css-meme-slider_text {
   width: 600px;
+  height: 60px;
   background-color: inherit;
-
   overflow: hidden;
   position: relative;
   margin: 0 auto;
 }
 .css-meme-slide_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   height: 100%;
   width: 100%;
-  /* position: absolute; */
+  position: absolute;
 }
 .css-meme-slide {
   text-align: center;
@@ -192,11 +198,11 @@ body {
   height: 22px;
 }
 
-.css-meme-slider,
-.css-meme-slider_text {
+.css-meme-slide,
+.css-meme-slide_text {
   opacity: 0;
 
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .controls__item:hover {
@@ -210,4 +216,16 @@ body {
 #slide-4:checked ~ .controls .controls__item:nth-of-type(4) {
   background-color: #ffece5;
   box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
+#slide-1:checked ~ .css-meme-slider > .slide-1,
+#slide-2:checked ~ .css-meme-slider > .slide-2,
+#slide-3:checked ~ .css-meme-slider > .slide-3,
+#slide-4:checked ~ .css-meme-slider > .slide-4 {
+  opacity: 1;
+}
+#slide-1:checked ~ .css-meme-slider_text > .slide-1,
+#slide-2:checked ~ .css-meme-slider_text > .slide-2,
+#slide-3:checked ~ .css-meme-slider_text > .slide-3,
+#slide-4:checked ~ .css-meme-slider_text > .slide-4 {
+  opacity: 1;
 }
