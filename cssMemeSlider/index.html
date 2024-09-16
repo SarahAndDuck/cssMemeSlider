@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cssMemeSlider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo">css<span>MemeSlider</span></div>
+      </header>
+      <main class="main">
+        <div class="cover">
+          <input type="radio" name="control-button" id="slide-1" checked />
+          <input type="radio" name="control-button" id="slide-2" />
+          <input type="radio" name="control-button" id="slide-3" />
+          <input type="radio" name="control-button" id="slide-4" />
+          <div class="css-meme-slider">
+            <div class="css-meme-slide slide-1">
+              <img src="./img/sliders/1.png" alt="lide-1" />
+            </div>
+            <div class="css-meme-slide slide-2">
+              <img src="./img/sliders/2.png" alt="lide-2" />
+            </div>
+            <div class="css-meme-slide slide-3">
+              <img src="./img/sliders/3.png" alt="lide-3" />
+            </div>
+            <div class="css-meme-slide slide-4">
+              <img src="./img/sliders/4.png" alt="lide-4" />
+            </div>
+          </div>
+          <div class="controls">
+            <label class="controls__item" for="slide-1"><span></span></label>
+            <label class="controls__item" for="slide-2"><span></span></label>
+            <label class="controls__item" for="slide-3"><span></span></label>
+            <label class="controls__item" for="slide-4"><span></span></label>
+          </div>
+          <div class="css-meme-slider_text">
+            <div class="css-meme-slide_text slide-1">
+              Когда отдыхаешь за границей и слышишь, как кто-то ругается на
+              твоем родном языке
+            </div>
+            <div class="css-meme-slide_text slide-2">
+              худеющий я ищу в магазине безкалорийный мазик к пельменям
+            </div>
+            <div class="css-meme-slide_text slide-3">
+              мир, в котором люди сразу говорят что именно им от вас нужно без
+              всяких этих "как дела"
+            </div>
+            <div class="css-meme-slide_text slide-4">
+              -Ты абьюзер? <br />
+              -Не, я всего лишь:
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
