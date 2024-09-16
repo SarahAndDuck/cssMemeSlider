@@ -137,3 +137,26 @@ body {
 .main {
   flex: 1 1 auto;
 }
+.control__lisl {
+  display: flex;
+  gap: 6px;
+}
+.control__item {
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.control__item > span {
+  display: block;
+  background: url(./img/element-1.png) center / cover no-repeat;
+  width: 22px;
+  height: 22px;
+}
+.control__item:hover {
+  background-color: #ffece5;
+  box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.control__item.active {
+  background-color: #ffece5;
+  box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2) inset;
+}
