@@ -18,14 +18,27 @@
         <div class="logo">css<span>MemeSlider</span></div>
       </header>
       <main class="main">
-        main
-        <div class="control">
-          <ul class="control__lisl">
-            <li class="control__item active"><span></span></li>
-            <li class="control__item"><span></span></li>
-            <li class="control__item"><span></span></li>
-            <li class="control__item"><span></span></li>
-          </ul>
+        <input type="radio" name="control-button" id="slide-1" checked />
+        <input type="radio" name="control-button" id="slide-2" />
+        <input type="radio" name="control-button" id="slide-3" />
+        <input type="radio" name="control-button" id="slide-4" />
+        <div class="css-meme-slider">
+          <div class="css-meme-slide slide-1">1</div>
+          <div class="css-meme-slide slide-2">2</div>
+          <div class="css-meme-slide slide-3">3</div>
+          <div class="css-meme-slide slide-4">4</div>
+        </div>
+        <div class="css-meme-slider_text">
+          <div class="css-meme-slide_text slide-1">1</div>
+          <div class="css-meme-slide_text slide-2">2</div>
+          <div class="css-meme-slide_text slide-3">3</div>
+          <div class="css-meme-slide_text slide-4">4</div>
+        </div>
+        <div class="controls">
+          <label class="controls__item" for="slide-1"><span></span></label>
+          <label class="controls__item" for="slide-2"><span></span></label>
+          <label class="controls__item" for="slide-3"><span></span></label>
+          <label class="controls__item" for="slide-4"><span></span></label>
         </div>
       </main>
       <footer class="footer">footer</footer>
