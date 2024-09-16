@@ -135,43 +135,58 @@ body {
   color: #8fc638;
 }
 .main {
+  display: flex;
+  justify-content: center;
+}
+.cover {
+  max-width: 600px;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+
   gap: 20px;
 }
-.main > input {
+.cover > input {
   display: none;
 }
 .css-meme-slider {
-  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
   height: 300px;
   background-color: #8fc638;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  margin: 0 auto;
 }
+
 .css-meme-slide {
   text-align: center;
   height: 100%;
   width: 100%;
   position: absolute;
+  img {
+    height: auto;
+    width: 100%;
+    width: 600px;
+  }
 }
 .css-meme-slider_text {
-  width: 600px;
-  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
   background-color: inherit;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
+  align-self: flex-start;
 }
 .css-meme-slide_text {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  height: 100%;
+  text-align: left;
   width: 100%;
   position: absolute;
   font-family: var(--font-family);
@@ -179,14 +194,10 @@ body {
   font-size: 24px;
   color: #242851;
 }
-.css-meme-slide {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
+
 .controls {
   display: flex;
+  align-self: center;
   gap: 6px;
 }
 .controls__item {
@@ -205,8 +216,6 @@ body {
 .css-meme-slide,
 .css-meme-slide_text {
   opacity: 0;
-
-  /* z-index: 0; */
 }
 
 .controls__item:hover {
@@ -225,11 +234,24 @@ body {
 #slide-2:checked ~ .css-meme-slider > .slide-2,
 #slide-3:checked ~ .css-meme-slider > .slide-3,
 #slide-4:checked ~ .css-meme-slider > .slide-4 {
+  transition: all 0.6s;
   opacity: 1;
 }
 #slide-1:checked ~ .css-meme-slider_text > .slide-1,
 #slide-2:checked ~ .css-meme-slider_text > .slide-2,
 #slide-3:checked ~ .css-meme-slider_text > .slide-3,
 #slide-4:checked ~ .css-meme-slider_text > .slide-4 {
+  transition: all 0.6s;
   opacity: 1;
+}
+
+@media (max-width: 500px) {
+  .css-meme-slide_text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .css-meme-slide_text {
+    font-size: 20px;
+  }
 }
