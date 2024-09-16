@@ -90,3 +90,50 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+/*  */
+:root {
+  --font-family: "Nunito", sans-serif;
+  --second-family: "Quicksand", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #fff8f5 0%, #ffece5 100%);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0 rgba(30, 129, 204, 0.2);
+  background: linear-gradient(180deg, #ffece5 0%, #fff8f5 100%);
+  border: 1px solid rgba(255, 157, 131, 0.3);
+  border-radius: 20px;
+  min-height: 90%;
+  width: 900px;
+  padding: 20px;
+}
+.header {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 20px;
+  color: #ff7751;
+}
+.logo {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 20px;
+}
+.logo > span {
+  color: #8fc638;
+}
+.main {
+  flex: 1 1 auto;
+}
